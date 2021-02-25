@@ -1,0 +1,26 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javax.print.DocFlavor.URL?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.shape.Path?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <!-- <stylesheets>
+    <URL value="@/css/styles.css"></URL> почему это не работает
+    </stylesheets>-->
+    <Button text="Send message to chat" onAction="#btnSendOnClick" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Button text="Exit from chat" onAction="#btnExitOnClick" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <TextArea fx:id="TxtArea" GridPane.columnIndex="0" GridPane.rowIndex="1" prefWidth="400" prefHeight="100"/>
+    <Label fx:id="TxtLog" text="Harley Quinn" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <TextField fx:id="TxtField"  onKeyPressed="#txtEnter" GridPane.rowIndex="2" GridPane.columnIndex="0" prefHeight="50" prefWidth="400"/>
+
+
+</GridPane>
